@@ -163,6 +163,24 @@ th {
 tr:hover {
   background-color: #f9f9f9;  /* Adds subtle hover feedback */
 }
+
+.table-row {
+  display: flex;
+  gap: 1.5rem;          /* Space between the tables */
+  width: 100%;
+}
+
+.table-row table {
+  flex: 1;              /* Forces all 3 tables to have equal width */
+  margin: 0;            /* Overrides default table vertical margins */
+}
+
+/* Collapse to single column on mobile screens */
+@media (max-width: 768px) {
+  .table-row {
+    flex-direction: column;
+  }
+}
 /* ==========================================================================
    5. RESPONSIVE DESIGN (MEDIA QUERIES)
    ========================================================================== */
