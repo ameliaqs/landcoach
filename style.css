@@ -176,9 +176,9 @@ tr:hover {
 }
 
 /* Collapse to single column on mobile screens */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .table-row {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 /* ==========================================================================
