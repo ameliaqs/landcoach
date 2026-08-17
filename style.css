@@ -178,7 +178,7 @@ tr:hover {
 /* Collapse to single column on mobile screens */
 @media (max-width: 768px) {
   .table-row {
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 /* ==========================================================================
