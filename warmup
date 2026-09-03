@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Warm Ups</title>
+  <link rel="shortcut icon" type="image/x-icon" href="winner.jpg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container flex-center">
+      <a href="index.html">Home</a>
+      <a href="workouts.html">Workouts</a>
+    </div>
+</nav>
+
+  <!-- Body Text -->
+  <h1>Warm ups</h1>
+  <p>hello</p>
+</body>
+</html>
