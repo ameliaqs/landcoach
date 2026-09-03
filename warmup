@@ -14,11 +14,12 @@
     <div class="container flex-center">
       <a href="index.html">Home</a>
       <a href="workouts.html">Workouts</a>
+      <a href="warmup.html">Warm Ups</a>
     </div>
 </nav>
 
   <!-- Body Text -->
   <h1>Warm ups</h1>
-  <p>hello</p>
+  <p>hello test</p>
 </body>
 </html>
