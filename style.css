@@ -30,9 +30,9 @@ body {
   padding: 2rem;
 }
 
-/* Sets list item text and numbers/bullets to match surrounding body text color */
-ol, ul {
-  color: inherit;
+/* If the list text consists of clickable links, target the <a> tags specifically */
+ol a, ul a, li a {
+  color: inherit !important;
 }
 
 /* ==========================================================================
