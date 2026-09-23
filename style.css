@@ -96,6 +96,31 @@ table {
   border-collapse: collapse;
 }
 
+/* Container layout using Flexbox */
+.image-row {
+  display: flex;
+  gap: 15px;              /* Space between images */
+  margin-bottom: 20px;     /* Space between rows */
+  justify-content: center; /* Centers the images in the row */
+}
+
+/* Ensure all images maintain the same height and crop neatly */
+.image-row img {
+  height: 220px;          /* Set a fixed height for consistency */
+  object-fit: cover;      /* Crops images to fill space without stretching */
+  border-radius: 8px;      /* Optional: smooth rounded corners */
+}
+
+/* 3-column row sizing */
+.row-3 img {
+  width: calc(33.333% - 10px);
+}
+
+/* 2-column row sizing */
+.row-2 img {
+  width: calc(50% - 10px);
+}
+
 /* ==========================================================================
    4. COMPONENTS
    ========================================================================== */
