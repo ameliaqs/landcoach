@@ -238,3 +238,4 @@ tr:hover {
 ol, ul, li, ol li::marker, ul li::marker {
   color: var(--text-muted) !important;
 }
+
