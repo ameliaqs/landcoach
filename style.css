@@ -97,18 +97,20 @@ table {
 }
 
 /* Container layout using Flexbox */
+/* Container layout using Flexbox */
 .image-row {
   display: flex;
-  gap: 15px;              /* Space between images */
-  margin-bottom: 20px;     /* Space between rows */
-  justify-content: center; /* Centers the images in the row */
+  gap: 15px;               /* Uniform spacing between images */
+  margin-bottom: 20px;      /* Spacing between the rows */
+  justify-content: center;  /* Centers the items horizontally */
 }
 
-/* Ensure all images maintain the same height and crop neatly */
+/* Force every image to the exact same dimensions */
 .image-row img {
-  height: 220px;          /* Set a fixed height for consistency */
-  object-fit: cover;      /* Crops images to fill space without stretching */
-  border-radius: 8px;      /* Optional: smooth rounded corners */
+  width: 200px;            /* Set explicit uniform width */
+  height: 200px;           /* Set explicit uniform height */
+  object-fit: cover;       /* Crops excess parts so images don't stretch */
+  border-radius: 8px;       /* Optional: rounded corners */
 }
 
 /* 3-column row sizing */
