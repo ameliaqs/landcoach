@@ -31,9 +31,6 @@ body {
 }
 
 /* If the list text consists of clickable links, target the <a> tags specifically */
-ol a, ul a, li a {
-  color: inherit !important;
-}
 
 /* ==========================================================================
    2. TYPOGRAPHY
@@ -209,4 +206,20 @@ tr:hover {
   
   h1 { font-size: 2rem; }
   h2 { font-size: 1.75rem; }
+}
+
+/* 1. Force lists and all child elements to take your exact text color */
+ol, ul, li, li *, ol li::marker, ul li::marker {
+  color: inherit !important;
+}
+
+/* 2. If your body text color is defined on paragraph tags, match that exact color */
+/* Replace #333333 below with your actual text hex code if it is different */
+ol, ul, li {
+  color: #333333 !important; 
+}
+
+/* 3. Keep hyperlinks inside lists matching as well */
+ol a, ul a, li a {
+  color: inherit !important;
 }
