@@ -101,25 +101,17 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;                  /* Gap between images */
-  margin-bottom: 16px;        /* Gap between top and bottom row */
-  width: 100%;
+  gap: 16px;            /* Space between images */
+  margin-bottom: 16px;  /* Space between rows */
+  flex-wrap: wrap;      /* Wraps on smaller screens if needed */
 }
 
 /* Base style for every image */
 .image-row img {
-  /* Use aspect-ratio to keep them perfectly square (or 4/3, 16/9, etc.) */
-  aspect-ratio: 1 / 1;        
-  
-  /* Flexible width so they shrink on mobile, but capped at a max size */
-  width: 100%;
-  max-width: 220px;           /* Adjust maximum image size here */
-  height: auto;
-  
-  /* Crops images neatly without stretching or squeezing */
-  object-fit: cover;          
-  border-radius: 8px;
-  display: block;             /* Removes inline bottom space default */
+  height: 200px;        /* Sets identical height across all images */
+  width: auto;          /* Maintains original aspect ratio without stretching */
+  object-fit: contain;  /* Ensures full image is visible without cropping */
+  border-radius: 8px;   /* Optional styling */
 }
 
 /* Stack images vertically on mobile screens so they don't get tiny */
